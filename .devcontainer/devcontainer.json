@@ -1,0 +1,16 @@
+{
+    "name": "Aula DevSecOps",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.9",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:1": {}
+    },
+    "postCreateCommand": "pip install semgrep && curl -sSfL https://raw.githubusercontent.com/gitleaks/gitleaks/main/scripts/install.sh | sh -s -- -b /usr/local/bin",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "SonarSource.sonarlint-vscode",
+                "zhuangtongfa.Material-theme"
+            ]
+        }
+    }
+}
